@@ -1,4 +1,4 @@
-# MinkExtension for humans
+# Behat MinkExtension for humans
 
 
 ## Authentication
