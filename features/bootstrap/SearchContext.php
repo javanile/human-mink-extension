@@ -1,15 +1,14 @@
 <?php
 
-use Behat\Behat\Tester\Exception\PendingException;
+namespace Javanile\HumanMinkExtension\Features;
+
 use Behat\Behat\Context\Context;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
-use Behat\MinkExtension\Context\MinkContext;
+use Javanile\HumanMinkExtension\HumanContext;
 
 /**
  * Defines application features from the specific context.
  */
-class SearchContext extends BaseContext implements Context
+class SearchContext extends HumanContext implements Context
 {
     /**
      * Initializes context.
@@ -21,8 +20,6 @@ class SearchContext extends BaseContext implements Context
     public function __construct()
     {
     }
-
-
 
     /**
      * @Given I press enter on :arg1

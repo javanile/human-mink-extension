@@ -12,7 +12,7 @@ services:
 
   behat:
     extends: { service: php }
-    entrypoint: ['./behat.sh']
+    entrypoint: ['./vendor/bin/behat']
     links: ['selenium', 'novnc']
 
   selenium:
