@@ -18,6 +18,11 @@
       "Javanile\\HumanMinkExtension\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Context\\": "features/bootstrap"
+    }
+  },
   "require-dev": {
     "behat/behat": "^3.4",
     "behat/mink": "v1.7.1",

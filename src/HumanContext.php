@@ -10,6 +10,10 @@ use Behat\MinkExtension\Context\MinkContext;
  */
 class HumanContext extends MinkContext implements Context
 {
+    use Traits\ElementTrait;
+    use Traits\WaitTrait;
+    use Traits\KeyboardTrait;
+
     /**
      * Initializes context.
      *
@@ -19,14 +23,6 @@ class HumanContext extends MinkContext implements Context
      */
     public function __construct()
     {
-    }
-
-    /**
-     * @Given I wait until the page loads
-     */
-    public function iWaitUntilThePageLoads()
-    {
-        sleep(4);
     }
 
     /**

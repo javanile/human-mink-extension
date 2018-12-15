@@ -6,6 +6,6 @@ Feature: Search
   Scenario: Searching for a page that does exist
     Given I am on "http://google.com"
     When I fill in "q" with "Behavior Driven Development"
-    And I press "Cerca con Google"
-    Then I should see "agile software development"
+    #And I press "Cerca con Google"
+    #Then I should see "agile software development"
 

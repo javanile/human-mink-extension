@@ -5,11 +5,14 @@
 default:
   suites:
     Authentication:
-      paths: ['%paths.base%/features/suites/Authentication']
-      contexts: ['AuthenticationContext']
+      paths: ['%paths.base%/features/Authentication']
+      contexts: ['Javanile\HumanMinkExtension\HumanContext']
+    Keyboard:
+      paths: ['%paths.base%/features/Keyboard']
+      contexts: ['Javanile\HumanMinkExtension\HumanContext']
     Search:
-      paths: ['%paths.base%/features/suites/Google']
-      contexts: ['GoogleContext']
+      paths: ['%paths.base%/features/Search']
+      contexts: ['Javanile\HumanMinkExtension\HumanContext']
 
   extensions:
     Behat\MinkExtension:
