@@ -1,0 +1,29 @@
+{
+  "name": "javanile/human-mink-extension",
+  "description": "Import SQL file from command-line",
+  "version": "0.0.3",
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Francesco Bianco",
+      "email": "bianco@javanile.org"
+    }
+  ],
+  "bin": [
+    "bin/mysql-import"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Javanile\\HumanMinkExtension\\": "src"
+    }
+  },
+  "require-dev": {
+    "behat/behat": "^3.4",
+    "behat/mink": "v1.7.1",
+    "behat/mink-extension": "2.1.*",
+    "behat/mink-selenium2-driver": "1.3.*",
+    "behat/symfony2-extension": "2.1.*",
+    "behat/mink-browserkit-driver": "v1.3.2"
+  }
+}

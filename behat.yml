@@ -1,0 +1,20 @@
+##
+## Behat
+##
+
+default:
+  suites:
+    Authentication:
+      paths: ['%paths.base%/features/suites/Authentication']
+      contexts: ['AuthenticationContext']
+    Search:
+      paths: ['%paths.base%/features/suites/Google']
+      contexts: ['GoogleContext']
+
+  extensions:
+    Behat\MinkExtension:
+      browser_name: chrome
+      default_session: selenium2
+      base_url: http://behat.testing
+      selenium2:
+        wd_host: http://selenium:4444/wd/hub
